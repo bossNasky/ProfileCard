@@ -1,0 +1,52 @@
+:root {
+  --clr-primary-400: hsl(185, 75%, 39%);
+  --clr-primary-300: hsl(229, 23%, 23%);
+  --clr-primary-200: hsl(227, 10%, 46%);
+  --clr-neutral-400: hsl(0, 0%, 59%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
+  overflow: hidden;
+}
+
+.main {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-color: var(--clr-primary-400);
+}
+
+.decorative-top,
+.decorative-bottom {
+  width: 60rem;
+  height: 60rem;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.decorative-top {
+  position: absolute;
+  top: -31.25rem;
+  left: -18.75rem;
+}
+
+.decorative-bottom {
+  position: absolute;
+  bottom: -31.25rem;
+  right: -18.75rem;
+}
